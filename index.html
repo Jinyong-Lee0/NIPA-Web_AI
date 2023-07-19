@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!-- <base href="https://jinyong-lee0.github.io/NIPA-Web_AI/" /> -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>[NIPA] AI+웹개발 취업캠프</title>
+    </head>
+    <body>
+        <header>
+            <h2>
+                <a href="/"><img src="img/logo.jpg" alt="Real_Dragon" /></a>
+            </h2>
+            <h1 id="title">
+                AI 서비스 완성! AI 웹개발 취업캠프 - 과제 제출
+                [NIPA/정보통신산업진흥원]
+            </h1>
+        </header>
+
+        <section class="center">
+            <h2>나의 과제</h2>
+            <table id="my-study-list">
+                <tr>
+                    <th>날짜</th>
+                    <th>제목</th>
+                    <th>소감</th>
+                </tr>
+                <tr>
+                    <td>2023. 7. 19.</td>
+                    <td>
+                        <a href="homework-list/230719.html">HTML 뼈대 만들기</a>
+                    </td>
+                    <td>오랫만에 서비스 구상 및 뼈대 잡기라..</td>
+                </tr>
+            </table>
+        </section>
+
+        <footer>
+            <hr />
+            <p>
+                본 후기는 정보통신산업진흥원(NIPA)에서 주관하는 &lt;AI 서비스
+                완성! AI+웹개발 취업캠프 - 프론트엔드&백엔드&gt; 과정 과제
+                기록으로 작성 되었습니다. <br />
+                #정보통신산업진흥원 #NIPA #AI교육 #프로젝트 #유데미 #IT개발캠프
+                #개발자부트캠프 #프론트엔드 #백엔드 #AI웹개발취업캠프 #취업캠프
+                #개발취업캠프
+            </p>
+        </footer>
+    </body>
+    <script>
+        const fs = require("fs"); // fs 모듈 선언
+        const folder = "img"; // 폴더 경로 값 지정
+        fs.readdir(folder, function (error, filelist) {
+            console.log(filelist);
+        });
+    </script>
+</html>
