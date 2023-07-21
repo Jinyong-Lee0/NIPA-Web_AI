@@ -146,19 +146,19 @@ section.inner_big {
 }
 
 .slider li[data-slide="1"] {
-    background-image: url("https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg");
+    background-image: url("homework-list/230720/img/slide1");
 }
 
 .slider li[data-slide="2"] {
-    background-image: url("https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_1280.jpg");
+    background-image: url("homework-list/230720/img/slide2");
 }
 
 .slider li[data-slide="3"] {
-    background-image: url("https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828_1280.jpg");
+    background-image: url("homework-list/230720/img/slide3");
 }
 
 .slider li[data-slide="4"] {
-    background-image: url("https://cdn.pixabay.com/photo/2017/08/27/15/09/moraine-lake-2686353_1280.jpg");
+    background-image: url("homework-list/230720/img/slide4");
 }
 
 .indicate li {
