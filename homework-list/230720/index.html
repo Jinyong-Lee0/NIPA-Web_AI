@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <base href="https://jinyong-lee0.github.io/NIPA-Web_AI/" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="homework-list/230720/style.css" />
+        <title>2023-07-20 [NIPA]_AI&웹개발 과제 3일차</title>
+    </head>
+    <body>
+        <header>
+            <ul class="inner">
+                <li>
+                    <h1 id="logo">
+                        <a href="https://jinyong-lee0.github.io/NIPA-Web_AI/"
+                            ><img
+                                src="homework-list/230720/logo.png"
+                                alt="로고 배치 예정"
+                        /></a>
+                    </h1>
+                </li>
+                <li><a href="#">연령별 추천코스 찾기</a></li>
+                <li><a href="#">상황별 추천코스 찾기</a></li>
+                <li class="float_right">
+                    <a href="#"><button>로그인</button></a>
+                </li>
+                <li class="float_right">
+                    <a href="#"
+                        ><img
+                            src="https://cdn-icons-png.flaticon.com/512/149/149852.png"
+                            alt="검색"
+                    /></a>
+                </li>
+            </ul>
+        </header>
+
+        <main class="inner">
+            <section class="inner_big">
+                <ul class="slider">
+                    <li data-slide="1"><h2>임시 텍스트1</h2></li>
+                    <li data-slide="2"><h2>임시 텍스트2</h2></li>
+                    <li data-slide="3"><h2>임시 텍스트3</h2></li>
+                    <li data-slide="4"><h2>임시 텍스트4</h2></li>
+                </ul>
+                <ul class="indicate flex justify-content__center">
+                    <li data-slide="1">
+                        <button class="cursor__pointer"></button>
+                    </li>
+                    <li data-slide="2">
+                        <button class="cursor__pointer"></button>
+                    </li>
+                    <li data-slide="3">
+                        <button class="cursor__pointer"></button>
+                    </li>
+                    <li data-slide="4">
+                        <button class="cursor__pointer"></button>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="notice-board">
+                <h2>서비스에 대한 사람들의 평가를 먼저 확인해봐요</h2>
+                <ul>
+                    <li><a href="/">서비스명1</a></li>
+                    <li><a href="/">서비스명2</a></li>
+                    <li><a href="/">서비스명3</a></li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>No</th>
+                        <th>Date</th>
+                        <th>Title</th>
+                        <th>Rate</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2023-07-19</td>
+                        <td><a href="#">이렇게까지 좋을진 몰랐어요</a></td>
+                        <td>4.5</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2023-07-20</td>
+                        <td>
+                            <a href="#"
+                                >상담받는게 두려웠는데, 받길 잘한 것 같아요</a
+                            >
+                        </td>
+                        <td>4.9</td>
+                    </tr>
+                    <!-- etc.. 여기는 서버에게 데이터 요청해서 자바스크립트로 뿌려주기 -->
+                </table>
+            </section>
+
+            <section class="content">
+                <h2>혹시 이런 내용을 찾고 있진 않으신가요?</h2>
+                <ul id="services" class="grid columns5">
+                    <li>
+                        <img
+                            src="https://cdn.pixabay.com/photo/2023/01/14/11/24/counseling-7717987_1280.png"
+                            alt="임시 이미지"
+                        />
+                        <h3><a href="#">상담내용 제목</a></h3>
+                        <p>간략한 설명이 필요하지 않을까?</p>
+                    </li>
+                    <li>
+                        <img
+                            src="https://cdn.pixabay.com/photo/2023/01/14/11/24/counseling-7717987_1280.png"
+                            alt="임시 이미지"
+                        />
+                        <h3><a href="#">상담내용 제목</a></h3>
+                        <p>간략한 설명이 필요하지 않을까?</p>
+                    </li>
+                    <li>
+                        <img
+                            src="https://cdn.pixabay.com/photo/2023/01/14/11/24/counseling-7717987_1280.png"
+                            alt="임시 이미지"
+                        />
+                        <h3><a href="#">상담내용 제목</a></h3>
+                        <p>간략한 설명이 필요하지 않을까?</p>
+                    </li>
+                    <li>
+                        <img
+                            src="https://cdn.pixabay.com/photo/2023/01/14/11/24/counseling-7717987_1280.png"
+                            alt="임시 이미지"
+                        />
+                        <h3><a href="#">상담내용 제목</a></h3>
+                        <p>간략한 설명이 필요하지 않을까?</p>
+                    </li>
+                    <li>
+                        <img
+                            src="https://cdn.pixabay.com/photo/2023/01/14/11/24/counseling-7717987_1280.png"
+                            alt="임시 이미지"
+                        />
+                        <h3><a href="#">상담내용 제목</a></h3>
+                        <p>간략한 설명이 필요하지 않을까?</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="tags">
+                <h2>관심 서비스를 발견하지 못하셨나요?</h2>
+                <p>
+                    걱정하지 마세요! 아래에서 나에게 해당하는 내역을 선택하면
+                    저희가 추천하는 서비스들을 보여드릴게요
+                </p>
+                <ul class="flex justify-content__center width__60per">
+                    <li>임시카테고리</li>
+                    <li>임시카테고리</li>
+                    <li>임시카테고리</li>
+                    <li>임시카테고리</li>
+                    <li>임시카테고리</li>
+                    <li>임시카테고리</li>
+                    <li>임시카테고리</li>
+                    <li>임시카테고리</li>
+                    <li>임시카테고리</li>
+                    <li>임시카테고리</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>copyright</p>
+        </footer>
+    </body>
+</html>

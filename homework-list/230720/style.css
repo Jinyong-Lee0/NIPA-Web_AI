@@ -1,0 +1,251 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+button {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: inherit;
+    cursor: pointer;
+}
+table {
+    border-collapse: collapse;
+}
+img {
+    width: 100%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* layout settings */
+
+body {
+    background: #f4eedd;
+}
+
+.inner {
+    width: 1420px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.columns5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.justify-content__center {
+    justify-content: center;
+}
+
+.cursor__pointer {
+    cursor: pointer;
+}
+
+.width__60per {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* top layer */
+
+header {
+    /* margin-bottom: 30px; */
+    background: white;
+}
+
+header * {
+    height: 50px;
+    line-height: 50px;
+}
+
+header a {
+    display: block;
+    height: 100%;
+}
+
+header img {
+    padding: 10px 0;
+    height: 60%;
+}
+
+header > .inner > li {
+    float: left;
+    margin: 0 15px;
+}
+
+header > .inner > li:first-child {
+    margin-left: 0;
+}
+
+header > .inner > li:last-child {
+    margin-right: 0;
+}
+
+header > .inner > li.float_right {
+    float: right;
+}
+
+#logo {
+    height: 50px;
+}
+
+/* main area */
+
+section.inner_big {
+    width: 1500px;
+    position: relative;
+    left: -40px;
+    overflow: hidden;
+    margin-bottom: 48px;
+}
+
+.slider {
+    width: 400%;
+    height: 565px;
+}
+
+.slider li {
+    float: left;
+    text-align: center;
+    position: relative;
+    width: 25%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider li > * {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
+.slider li[data-slide="1"] {
+    background-image: url("https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg");
+}
+
+.slider li[data-slide="2"] {
+    background-image: url("https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_1280.jpg");
+}
+
+.slider li[data-slide="3"] {
+    background-image: url("https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828_1280.jpg");
+}
+
+.slider li[data-slide="4"] {
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/27/15/09/moraine-lake-2686353_1280.jpg");
+}
+
+.indicate li {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #000;
+    margin: 10px 5px;
+    overflow: hidden;
+}
+
+.indicate li button {
+    width: 100%;
+    height: 100%;
+}
+
+/* 게시판 */
+#notice-board {
+    width: 100%;
+}
+
+#notice-board ul {
+    margin: 20px 0;
+}
+
+#notice-board ul li {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#notice-board table {
+    width: 100%;
+    height: 100%;
+}
+
+#notice-board table *:not(a) {
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+#notice-board table tr > *:not(:nth-child(3)) {
+    text-align: center;
+}
+
+#notice-board table tr > *:nth-child(2) {
+    width: 10%;
+}
+
+/* content layer */
+
+.content {
+    margin-top: 40px;
+}
+
+.content h2 {
+    margin-bottom: 10px;
+}
+
+/* tahs layer */
+
+#tags {
+    margin-top: 40px;
+    line-height: 1.5;
+}
+
+#tags p {
+    margin-bottom: 15px;
+}
+
+#tags .flex > li {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #696969;
+    color: white;
+    cursor: pointer;
+}
+
+/* footer layer */
+
+footer {
+    margin-top: 30px;
+    height: 200px;
+    background: grey;
+    color: white;
+    line-height: 200px;
+    text-align: center;
+    font-size: 2em;
+}
