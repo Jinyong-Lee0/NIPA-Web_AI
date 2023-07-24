@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
     <head>
-        <base href="https://jinyong-lee0.github.io/NIPA-Web_AI/" />
+        <!-- <base href="https://jinyong-lee0.github.io/NIPA-Web_AI/" /> -->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="homework-list/230720/style.css" />
+        <link rel="stylesheet" href="/homework-list/230720/style.css" />
+        <script src="./script.js" defer></script>
         <title>2023-07-20 [NIPA]_AI&웹개발 과제 3일차</title>
     </head>
     <body>
@@ -14,7 +15,7 @@
                     <h1 id="logo">
                         <a href="https://jinyong-lee0.github.io/NIPA-Web_AI/"
                             ><img
-                                src="homework-list/230720/img/logo.png"
+                                src="/homework-list/230720/img/logo.png"
                                 alt="로고 배치 예정"
                         /></a>
                     </h1>
@@ -27,7 +28,7 @@
                 <li class="float_right">
                     <a href="#"
                         ><img
-                            src="homework-list/230720/img/search.png"
+                            src="/homework-list/230720/img/search.png"
                             alt="검색"
                     /></a>
                 </li>
@@ -96,44 +97,54 @@
                 <h2>혹시 이런 내용을 찾고 있진 않으신가요?</h2>
                 <ul id="services" class="grid columns5">
                     <li>
-                        <img
-                            src="homework-list/230720/img/grid-template.png"
-                            alt="임시 이미지"
-                        />
-                        <h3><a href="#">상담내용 제목</a></h3>
-                        <p>간략한 설명이 필요하지 않을까?</p>
+                        <a href="#"
+                            ><img
+                                src="/homework-list/230720/img/grid-template.png"
+                                alt="임시 이미지"
+                            />
+                            <h3>상담내용 제목</h3>
+                            <p>간략한 설명이 필요하지 않을까?</p></a
+                        >
                     </li>
                     <li>
-                        <img
-                            src="homework-list/230720/img/grid-template.png"
-                            alt="임시 이미지"
-                        />
-                        <h3><a href="#">상담내용 제목</a></h3>
-                        <p>간략한 설명이 필요하지 않을까?</p>
+                        <a href="#"
+                            ><img
+                                src="/homework-list/230720/img/grid-template.png"
+                                alt="임시 이미지"
+                            />
+                            <h3>상담내용 제목</h3>
+                            <p>간략한 설명이 필요하지 않을까?</p></a
+                        >
                     </li>
                     <li>
-                        <img
-                            src="homework-list/230720/img/grid-template.png"
-                            alt="임시 이미지"
-                        />
-                        <h3><a href="#">상담내용 제목</a></h3>
-                        <p>간략한 설명이 필요하지 않을까?</p>
+                        <a href="#"
+                            ><img
+                                src="/homework-list/230720/img/grid-template.png"
+                                alt="임시 이미지"
+                            />
+                            <h3>상담내용 제목</h3>
+                            <p>간략한 설명이 필요하지 않을까?</p></a
+                        >
                     </li>
                     <li>
-                        <img
-                            src="homework-list/230720/img/grid-template.png"
-                            alt="임시 이미지"
-                        />
-                        <h3><a href="#">상담내용 제목</a></h3>
-                        <p>간략한 설명이 필요하지 않을까?</p>
+                        <a href="#"
+                            ><img
+                                src="/homework-list/230720/img/grid-template.png"
+                                alt="임시 이미지"
+                            />
+                            <h3>상담내용 제목</h3>
+                            <p>간략한 설명이 필요하지 않을까?</p></a
+                        >
                     </li>
                     <li>
-                        <img
-                            src="homework-list/230720/img/grid-template.png"
-                            alt="임시 이미지"
-                        />
-                        <h3><a href="#">상담내용 제목</a></h3>
-                        <p>간략한 설명이 필요하지 않을까?</p>
+                        <a href="#"
+                            ><img
+                                src="/homework-list/230720/img/grid-template.png"
+                                alt="임시 이미지"
+                            />
+                            <h3>상담내용 제목</h3>
+                            <p>간략한 설명이 필요하지 않을까?</p></a
+                        >
                     </li>
                 </ul>
             </section>
@@ -156,11 +167,22 @@
                     <li>임시카테고리</li>
                     <li>임시카테고리</li>
                 </ul>
+                <button type="submit" class="float_right">제출하기</button>
             </section>
         </main>
 
         <footer>
-            <p>copyright</p>
+            <div class="inner flex justify-content__space-between">
+                <img src="/homework-list/230720/img/logo.png" alt="로고" />
+                <p>Copyright 2023. Councelling Center for Everyone</p>
+                <select name="family-site" id="family-site">
+                    <option value="naver">네이버</option>
+                    <option value="kakao">카카오</option>
+                    <option value="Pinterest">핀터레스트</option>
+                    <option value="Dribbbble">드리블(Dribbbble)</option>
+                    <option value="Freepik">프리픽(Freepik)</option>
+                </select>
+            </div>
         </footer>
     </body>
 </html>

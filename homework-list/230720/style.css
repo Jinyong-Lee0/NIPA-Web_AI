@@ -1,3 +1,9 @@
+/* font */
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
 /* reset */
 
 * {
@@ -58,6 +64,14 @@ body {
 
 .justify-content__center {
     justify-content: center;
+}
+
+.justify-content__space-between {
+    justify-content: space-between;
+}
+
+.float_right {
+    float: right;
 }
 
 .cursor__pointer {
@@ -218,10 +232,10 @@ section.inner_big {
     margin-bottom: 10px;
 }
 
-/* tahs layer */
+/* tags layer */
 
 #tags {
-    margin-top: 40px;
+    margin: 40px 0;
     line-height: 1.5;
 }
 
@@ -236,16 +250,54 @@ section.inner_big {
     background-color: #696969;
     color: white;
     cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#tags .flex > li:hover {
+    background-color: #9faa;
+    color: black;
+}
+
+#tags .flex > li.checked {
+    background-color: #992090;
+    color: white;
+}
+
+#tags button {
+    margin-top: -20px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #696969;
+    transition: background-color 0.4s, color 0.4s;
+    color: white;
+}
+
+#tags button:hover {
+    background-color: #9faa;
+    color: black;
 }
 
 /* footer layer */
 
 footer {
     margin-top: 30px;
-    height: 200px;
+    height: 150px;
     background: grey;
     color: white;
-    line-height: 200px;
-    text-align: center;
-    font-size: 2em;
+}
+
+footer > div {
+    padding-top: 35px;
+    line-height: 80px;
+}
+
+footer > div img {
+    width: 100px;
+    height: 30px;
+    margin-top: 30px;
+}
+
+footer > div select {
+    height: 30px;
+    margin-top: 30px;
 }
