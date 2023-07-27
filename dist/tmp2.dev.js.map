@@ -1,1 +1,0 @@
-{"version":3,"sources":["tmp2.js"],"names":["console","log","a"],"mappings":";;AAAAA,OAAO,CAACC,GAAR,CAAYC,CAAZ","sourcesContent":["console.log(a);\n"],"file":"tmp2.dev.js"}
