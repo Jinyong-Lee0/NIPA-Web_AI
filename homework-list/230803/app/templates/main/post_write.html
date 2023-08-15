@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <head>
+            <!-- <base href="https://jinyong-lee0.github.io/NIPA-Web_AI/" /> -->
+            <meta charset="UTF-8" />
+            <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0"
+            />
+            <!-- <link rel="stylesheet" href="/app/static/style.css" />
+            <link rel="stylesheet" href="/app/static/post.css" />
+            <script src="/app/static/script.js" defer></script>
+            <script src="/app/static/form.js" defer></script> -->
+            <link
+                rel="stylesheet"
+                href="{{url_for('static', filename='/style.css')}}"
+            />
+            <link
+                rel="stylesheet"
+                href="{{url_for('static', filename='/post.css')}}"
+            />
+            <script
+                type="text/javascript"
+                src="{{ url_for('static', filename='/script.js') }}"
+                defer
+            ></script>
+            <title>2023-08-02 [NIPA]_AI&웹개발 과제 3주 4일차</title>
+        </head>
+    </head>
+    <body>
+        <header>
+            <ul class="inner">
+                <li>
+                    <h1 id="logo">
+                        <a href="#"
+                            ><img
+                                src="{{ url_for('static', filename='img/logo.png') }}"
+                                alt="로고"
+                        /></a>
+                    </h1>
+                </li>
+                <li><a href="#">연령별 추천코스 찾기</a></li>
+                <li><a href="#">상황별 추천코스 찾기</a></li>
+                <li class="float_right">
+                    <a href="#"><button>로그인</button></a>
+                </li>
+                <li class="float_right">
+                    <a href="#">
+                        <img
+                            src="{{ url_for('static', filename='img/search.png') }}"
+                            alt="검색"
+                        />
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <main class="inner">
+            <form id="form" method="post">
+                <label for="postID">
+                    <span>게시판 선택</span>
+                    <select name="postID" id="postID">
+                        <option value="1">게시글1</option>
+                        <option value="2">게시글2</option>
+                        <option value="3">게시글3</option>
+                    </select>
+                </label>
+                <label for="title">
+                    <span>제목</span>
+                    <input type="text" name="title" id="title" required />
+                </label>
+                <label for="details">
+                    <p>게시글 내용</p>
+                    <textarea name="details" id="details" required></textarea>
+                </label>
+                <label for="confirm"
+                    ><button type="submit" id="confirm">제출하기</button></label
+                >
+            </form>
+        </main>
+    </body>
+</html>

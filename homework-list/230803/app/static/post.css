@@ -1,0 +1,32 @@
+form {
+    padding: 30px;
+}
+
+form > * {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#details {
+    width: 100%;
+    height: 150px;
+}
+
+form button {
+    padding: 5px;
+    background: #fff;
+    border-radius: 5px;
+    float: right;
+    border: 1px solid #000;
+    transition: color 0.3s, background 0.3s;
+}
+
+form button:hover {
+    color: white;
+    background: red;
+}
+
+form.was-validated :invalid {
+    border-color: red;
+}
